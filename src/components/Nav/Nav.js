@@ -9,13 +9,13 @@ function Nav() {
 
     return (
         <nav>
-            <h3>Logo</h3>
+            <h3>Spiro.RouterExample</h3>
             <ul className='nav-links'>
                 <Link style={navStyle} to='/about'>
                     <li>About</li>
                 </Link> 
-                <Link style={navStyle} to='/shop'>
-                    <li>Shop</li>
+                <Link style={navStyle} to='/effects'>
+                    <li>Effects</li>
                 </Link>
             </ul>
         </nav>

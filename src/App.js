@@ -2,7 +2,9 @@ import React from 'react';
 import './App.css';
 import Nav from './components/Nav/Nav';
 import About from './components/About/About';
-import Shop from './components/Shop/Shop';
+import Effects from './components/Effects/Effects';
+import Strains from './components/Strains/Strains';
+import StrainsDetail from './components/StrainDetail/StrainDetail';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 function App() {
@@ -13,7 +15,9 @@ function App() {
         <Switch>
           <Route path='/' exact component={Home} /> 
           <Route path='/about' component={About} /> 
-          <Route path='/shop' component={Shop} /> 
+          <Route path='/effects' exact component={Effects} /> 
+          <Route path='/effects/:id' component={Strains} /> 
+          <Route path='/strains/:id' component={StrainsDetail} /> 
         </Switch>    
       </div>
     </Router>
